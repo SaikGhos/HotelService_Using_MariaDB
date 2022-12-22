@@ -21,7 +21,7 @@ import java.util.Date;
 public class Reservation {
 
     @Id
-    private String reservationId;
+    private int reservationId;
 
     @NotBlank(message = "The room number can not be blank")
     @NotNull(message = "The room number can not be null")
@@ -35,5 +35,6 @@ public class Reservation {
     @NotBlank(message = "The name of the guest can not be blank")
     @NotNull(message = "The name of the guest can not be null")
     private String name;
-    private Date reservationDate;
+    private Date checkInDate;
+    private Date checkOutDate;
 }
