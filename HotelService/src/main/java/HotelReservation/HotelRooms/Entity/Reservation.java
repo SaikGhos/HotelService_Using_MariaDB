@@ -23,14 +23,14 @@ public class Reservation {
     @Id
     private String reservationId;
 
-    /*@NotBlank(message = "The room number can not be blank")
+    @NotBlank(message = "The room number can not be blank")
     @NotNull(message = "The room number can not be null")
-    private String roomNo;*/
+    private String roomNo;
 
-    @NotNull(message = "The number of rooms can not be null")
+    /*@NotNull(message = "The number of rooms can not be null")
     @Min(value=1,message = "The no. of rooms reserved should be 1 or more")
     @Positive(message = "Invalid Input")
-    private int noOfRooms;
+    private int noOfRooms;*/
 
     @NotBlank(message = "The name of the guest can not be blank")
     @NotNull(message = "The name of the guest can not be null")
